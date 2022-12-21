@@ -53,4 +53,9 @@ disp = DecisionBoundaryDisplay.from_estimator(
         ylabel='y',
     )
 plt.scatter(X[:,0], X[:,1], c=y, cmap=plt.cm.coolwarm, s=20, edgecolors="k")
+# set ticks
+plt.xticks(np.arange(-1, 1.5, 0.5))
+# set xlabel
+plt.xlabel('x')
+plt.ylabel('y')
 plt.show()
